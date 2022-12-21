@@ -1,0 +1,295 @@
+:root {
+    --green: rgba(2, 177, 183, 0.5);
+    --gray: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.leftside {
+    width: 40%;
+    height: 100vh;
+    background-color: #bbb;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftside>h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.leftside>ol {
+    list-style: none;
+    padding-left: 10em;
+    font-size: 1.5em;
+}
+
+.leftside li {
+    padding: 1rem;
+    counter-increment: counter;
+    position: relative;
+}
+
+.leftside li::before {
+    content: counter(counter);
+    position: absolute;
+    background-color: var(--gray);
+    width: 1.7em;
+    height: 1.7em;
+    left: -3em;
+    top: .5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+.leftside>span {
+    font-family: initial;
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: .5em 3em;
+    border-radius: .5em 5em;
+    box-shadow: 5px 5px 15px 0px #000;
+}
+
+
+/* add class curent to colorate the current number */
+
+.leftside .curent::before {
+    background-color: var(--green);
+}
+
+.rightside {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.rightside .page {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    gap: 5em;
+}
+
+.rightside h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.rightside form {
+    width: 90%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+section {
+    padding-left: 25%;
+    font-size: 20px;
+    font: 900;
+}
+
+section input {
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 35px;
+    width: 270px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.page2 section input {
+    margin: 20px 0px;
+}
+
+#submit2 {
+    padding: .3em .6em;
+    font-size: 1.5em;
+    position: relative;
+    left: -3em;
+}
+
+.sectionP p {
+    color: red;
+}
+
+section input:focus {
+    border: 3px solid var(--green);
+    box-shadow: 2px 2px 10px 0px var(--green);
+}
+
+section #profile {
+    border: none;
+}
+
+.page .next {
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    background-color: black;
+    width: 70%;
+    height: 2em;
+    left: 1.5em;
+    font-weight: 500;
+    letter-spacing: 5px;
+    border-radius: .4em;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+}
+
+.page1 .next1 {
+    position: absolute;
+    width: 633.34px;
+    height: 60px;
+    bottom: 250px;
+    left: 1030px;
+    color: #fff;
+}
+
+.page1 .next1 .a {
+    text-decoration: none;
+}
+
+.page .next:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next2 {
+    position: relative;
+    top: 350px;
+}
+
+.jsp {
+    flex-direction: column;
+}
+
+#form2 {
+    margin-right: 300px;
+    padding-top: 200px;
+   
+}
+.first-in{
+    width:50px;
+}
+.rightside >h2{
+    position: relative;
+    left: 440px;
+    top:70px;
+    margin-top: 20px;
+}
+body{
+    overflow: hidden;
+}
+#jj{
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+.next{
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    margin-top: 80px;
+    height: 35px;
+   
+    
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    background-color: black;
+    width: 220%;
+    height: 2em;
+    
+    font-weight: 300;
+    letter-spacing: 5px;
+    border-radius: .4em;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+}
+.next:hover{
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#form3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: -50px;
+}
+textarea{
+    position: relative;
+    top: 200px;
+    border-color: gainsboro;
+    outline: none;
+    text-decoration: none;
+    border-width: 8px;
+    height: 300px;
+    width: 350px;
+    max-width: 350px;
+    max-height: 300px;
+    margin-right: 50px;
+    min-width: 350px;
+    min-height: 300px;
+   margin-left: 10px;
+}
+textarea:hover{
+    border-color: aquamarine;
+}
+#pos{
+    justify-content: center;
+    margin-right: 200px;
+   
+}
+#form3 > label{
+
+margin-top: 120px;
+
+}
+.title{
+    margin-right: 200px;
+    margin-bottom: 0;
+    
+}
+#form3 > button{
+    position: relative;
+    left: -600px;
+   padding-right: 150px;
+   padding-left: 150px;
+  
+    
+}
+
+     ol > .current2::before{
+        background-color: var(--green);
+    }
+   #form1{
+    padding: 15px;
+   }
+ #form1 >section{
+    padding-bottom: 20px;
+    padding-right: 10px;
+ }

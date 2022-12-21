@@ -1,0 +1,53 @@
+
+.cv-page{
+    width: 8in;
+    height: 11.5in;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+}
+.cv-page header{
+    background-color: #ccc;
+    padding: .2in;
+    display: flex;
+    gap: 2em;
+}
+.cv-page img{
+    width: 2.5in;
+    height: 2.5in;
+    margin: 2em 2em ;
+    border-radius: 50%;
+}
+.cv-page .info{
+    margin-top: 4em;
+}
+.cv-page .info h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: .4in;
+    color: rgb(16, 85, 56);
+}
+main{
+    padding: .2in .5in;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5in 2.5in;
+}
+main .university,
+main .skills{
+    grid-column:span 2;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+main div{
+    margin: .1in;
+
+}
+main div h1{
+    text-decoration:underline ;
+}
+

@@ -1,0 +1,196 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+width: 100%;
+    height:60px;
+    background:transparent;
+    position: relative;
+    z-index: 10;
+}
+#imgg{
+    border-radius: 50%;
+    width:50px;
+  height: auto;
+    cursor: pointer;
+   margin-top: 10px;
+   padding-left: 5px;
+    
+}
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    left: 1000px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  
+   color: white;
+   list-style: none;
+   
+   
+}
+li{
+    border: 2px solid #fff;
+    padding-top:10px;
+   padding-left:15px;
+   padding-right: 15px;
+   padding-bottom: 20px;
+    border-radius: 20px;
+    font-weight:bold;
+    font-size: 12px;
+    cursor: pointer;
+    
+
+}
+li:hover{
+    background-color: rgb(170, 211, 197);
+
+}
+#jsp{
+    position: relative;
+   left:20px;
+}
+body{
+    position: relative;
+    background-image: url(./images/R.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 45%;
+   height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(86, 86, 86, 0.3);
+    position: absolute;
+   top: 0;
+}
+.info{
+color: white;
+position: relative;
+width:550px;
+top: 250px;
+left:80px;
+background: transparent;
+}
+h1{
+letter-spacing: 10px;
+font-size: 30px;
+
+}
+.ba{
+    width:220px;
+    background-color: aquamarine;
+    height:30px;
+    position: relative;
+    top:190px;
+    left:75px;
+    filter: blur(10px);
+    opacity: 50%;
+    animation: jsp 2s ;
+}
+@keyframes jsp {
+    0%{
+background-color: aqua;
+left:75px;
+width:10px;
+    }
+    50%{
+        background-color:rgb(135, 135, 146);
+        width:220px;
+    }
+}
+.kk{
+    width:340px;
+    background-color: aquamarine;
+    height:30px;
+    position: relative;
+    top:200px;
+    left:75px;
+    filter: blur(10px);
+    opacity: 50%;
+    animation: jsp 2s ;
+}
+#imgg:hover{
+background-color: aquamarine;
+opacity: 40%;
+}
+.slider{
+    
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 420px;
+    margin-right: 50px;
+   
+}
+button{
+    background: transparent;
+    border: none;
+    margin:10px;
+    color: whitesmoke;
+    font-size: 20px;
+   
+}
+.ksp{
+    width: 100px;
+    height:100px;
+    padding: 10px;
+    
+}
+.myproject{
+    background-color:rgb(204, 184, 184);
+    position:relative;
+    top:550px;
+    height:500px;
+}
+.cards{
+    width:450px;
+    height:400px;
+    background-color: rgb(228, 209, 209);
+    position: relative;
+    top:50px;
+    left:400px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btns{
+    
+  position: relative;
+  top:250px;
+  left:170px;
+
+}
+.one {
+    color:blue;
+}
+button{
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    top: -130px;
+    color: black;
+}
+.prg{
+    width:200px;
+    background-size: cover;
+    height:200px;
+    border-radius: 50%;
+    position: relative;
+    top:50px;
+    left:120px;
+}
+.title{
+    position: relative;
+    top:50px;
+    left:165px;
+}
